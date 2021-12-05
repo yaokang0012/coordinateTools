@@ -1,6 +1,7 @@
 package com.tool.coordinate.entity;
 
 /**
+ * 顶点信息
  * @author yk
  * @version 1.0
  * @description:
