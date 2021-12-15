@@ -52,10 +52,11 @@ public class VectorMath {
         double yLength = vector.get2PointLength(pEndPont, Direction.DIR_Y, precision);
         double zLength = vector.get2PointLength(pEndPont, Direction.DIR_Z, precision);
 
+        int scale = (precision + "").length();
         double total = Math.pow(xLength, 2)
                 + Math.pow(yLength, 2)
                 + Math.pow(zLength, 2);
-        return Math.sqrt(total);
+        return MathUtils.round(Math.sqrt(total), scale);
     }
 
     /**
